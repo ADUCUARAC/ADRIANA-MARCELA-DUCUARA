@@ -1,0 +1,57 @@
+PLANTEAMIENTO DEL PROBLEMA
+El objetivo de este ejercicio es hacer un programa en JavaScript que imite cómo funciona un cajero automático de manera básica. Con esto podemos practicar las 
+estructuras principales de programación. La idea es aprender a validar datos, evitar errores, mostrar mensajes claros y organizar el código paso a paso. 
+Hacer una simulación de un cajero es una forma práctica de entrenar la lógica de programación, usar condicionales, bucles entre otros, y también entender cómo 
+el software ayuda a resolver problemas reales que vemos todos los días en la vida y en las organizaciones.
+
+Al hacer este programa se practican y resuelven varias cosas importantes:
+•	Operaciones básicas: como consultar saldo, retirar y depositar dinero.
+•	Seguridad: pedir un PIN y dar solo un número limitado de intentos.
+•	Manejo de errores: evitar que el usuario retire más dinero del que tiene, que ingrese depósitos inválidos o que escriba opciones incorrectas.
+•	Interacción con el usuario: el programa funciona como intermediario entre la persona y su dinero, parecido a lo que hace un cajero real.
+
+El cajero automático permite: 
+•	Ingresar la clave (máx. 3 intentos).
+•	Mostrar y elegir de un menú con opciones:
+o	Consultar saldo
+o	Retirar dinero
+o	Depositar dinero
+o	Salir
+
+1.Definir entradas y salidas
+
+•Entradas (Inputs)
+o	Al solicitar la clave 
+o	Opciones de menú (consultar, Retirar, Depositar, Salir) 
+o	Al solicitar el monto de retiro
+o	Cuando solicita el monto del deposito
+o	Cuando pregunta si quiere realizar otra operación 
+
+•Salidas (Outputs)
+
+o	“Bienvenido al cajero”
+o	Cuando el sistema muestra: Clave incorrecta
+o	Cuando el sistema muestra: Has excedido los intentos, cuenta bloqueada
+o	Cuando el sistema muestra: El saldo actual del cliente
+o	Cuando el sistema muestra: Monto invalido
+o	Cuando el sistema muestra: Saldo insuficiente
+o	Cuando el sistema muestra: Gracias por usar el cajero
+
+2.Términos en control de flujo: 
+
+•Condicional: (If/Else):
+o	(if) Si la clave ingresada es correcta: muestra el menú
+o	(else) Si la clave ingresada es incorrecta: muestra error
+o	(if) Si hay suficiente saldo y el valor a retirar es menor que este → hacer el retiro
+o	(else) Si el monto es mayor al saldo → error
+o	(if) Si requiere realizar otra operación → repetir ciclo
+o	(else) Si no requiere realizar otra operación → salir del cajero
+
+•Bucle for: si la clave ingresada es correcta se rompe el bucle, por el contrario, si la clave ingresada es incorrecta, el bucle sigue hasta 
+        agotar los 3 intentos establecidos. 
+
+•Switch: 
+o	Consultar saldo
+o	Retirar dinero
+o	Depositar dinero
+o	Salir 
